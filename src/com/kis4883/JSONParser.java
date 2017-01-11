@@ -5,7 +5,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
-import java.util.LinkedList;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -30,7 +29,7 @@ public class JSONParser {
     }
 
 
-    void fileReader(String fileName) {
+    private void fileReader(String fileName) {
         strContextFile = null;
         try {
             in = new FileReader(fileName);
@@ -42,6 +41,8 @@ public class JSONParser {
             }
 
             String res = sb.toString();
+            System.out.println("Json Context\n" + res);
+
             strContextFile = res.replaceAll("\\s",  "");
 
         } catch (FileNotFoundException e) {
@@ -51,16 +52,7 @@ public class JSONParser {
         }
     }
 
-    private int peekStatus(LinkedList statusStack) {
-        if(statusStack.size() == 0) {
-            return -1;
-        }
-
-        Integer status = (Integer)statusStack.getFirst();
-        return status.intValue();
-    }
-
-    boolean isStringInteger(String s) {
+    private boolean isStringInteger(String s) {
         try {
             Integer.parseInt(s);
             return true;
@@ -69,7 +61,7 @@ public class JSONParser {
         }
     }
 
-    void parse() {
+    public void parse() {
         boolean hasName = false;
         boolean hasValue = false;
         String strName = null;
