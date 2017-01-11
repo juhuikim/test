@@ -106,6 +106,7 @@ public class JSONParser {
     }
 
     public void get(String strKey) {
+        boolean result = false;
         Set<String> set = objectValue.keySet();
         Iterator<String> iter = set.iterator();
         while(iter.hasNext()) {
@@ -114,7 +115,13 @@ public class JSONParser {
             if(key.equals(strKey)) {
                 JSONValue value = objectValue.get(key);
                 value.print();
+                result = true;
+                break;
             }
+        }
+
+        if(result == false) {
+            System.out.println("해당 Name이 존재하지 않습니다!");
         }
     }
 

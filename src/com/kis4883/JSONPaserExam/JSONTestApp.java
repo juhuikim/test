@@ -13,5 +13,6 @@ public class JSONTestApp {
         parser.get("a");
         parser.get("b");
         parser.get("c");
+        parser.get("d");
     }
 }
