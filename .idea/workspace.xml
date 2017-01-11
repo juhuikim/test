@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="934f31e2-ad3f-482e-9bf1-2db1d86cd147" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/kis4883.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/kis4883.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kis4883/JSONPaserExam/JSONParser.java" afterPath="$PROJECT_DIR$/src/com/kis4883/JSONPaserExam/JSONParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kis4883/JSONPaserExam/JSONTestApp.java" afterPath="$PROJECT_DIR$/src/com/kis4883/JSONPaserExam/JSONTestApp.java" />
-    </list>
+    <list default="true" id="934f31e2-ad3f-482e-9bf1-2db1d86cd147" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -97,12 +92,12 @@
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1484113423583" expanded="true" signature="59:54932" ph="..." />
-                <marker date="1484113423583" expanded="true" signature="98:192" ph="..." />
-                <marker date="1484113423583" expanded="true" signature="51983:52000" ph="..." />
-                <marker date="1484113423583" expanded="true" signature="51983:52018" ph="..." />
-                <marker date="1484113423583" expanded="true" signature="51983:52031" ph="..." />
-                <marker date="1484113423583" expanded="true" signature="51983:52046" ph="..." />
+                <marker date="1484113615070" expanded="true" signature="59:54268" ph="..." />
+                <marker date="1484113615070" expanded="true" signature="98:192" ph="..." />
+                <marker date="1484113615070" expanded="true" signature="51319:51336" ph="..." />
+                <marker date="1484113615070" expanded="true" signature="51319:51354" ph="..." />
+                <marker date="1484113615070" expanded="true" signature="51319:51367" ph="..." />
+                <marker date="1484113615070" expanded="true" signature="51319:51382" ph="..." />
               </folding>
             </state>
           </provider>
@@ -121,8 +116,8 @@
       <file leaf-file-name="JSONParser.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/kis4883/JSONPaserExam/JSONParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="135" column="25" lean-forward="true" selection-start-line="135" selection-start-column="25" selection-end-line="135" selection-end-column="25" />
+            <state relative-caret-position="567">
+              <caret line="137" column="0" lean-forward="true" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -855,12 +850,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1484113423583" expanded="true" signature="59:54932" ph="..." />
-            <marker date="1484113423583" expanded="true" signature="98:192" ph="..." />
-            <marker date="1484113423583" expanded="true" signature="51983:52000" ph="..." />
-            <marker date="1484113423583" expanded="true" signature="51983:52018" ph="..." />
-            <marker date="1484113423583" expanded="true" signature="51983:52031" ph="..." />
-            <marker date="1484113423583" expanded="true" signature="51983:52046" ph="..." />
+            <marker date="1484113615070" expanded="true" signature="59:54268" ph="..." />
+            <marker date="1484113615070" expanded="true" signature="98:192" ph="..." />
+            <marker date="1484113615070" expanded="true" signature="51319:51336" ph="..." />
+            <marker date="1484113615070" expanded="true" signature="51319:51354" ph="..." />
+            <marker date="1484113615070" expanded="true" signature="51319:51367" ph="..." />
+            <marker date="1484113615070" expanded="true" signature="51319:51382" ph="..." />
           </folding>
         </state>
       </provider>
@@ -899,8 +894,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kis4883/JSONPaserExam/JSONParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="135" column="25" lean-forward="true" selection-start-line="135" selection-start-column="25" selection-end-line="135" selection-end-column="25" />
+        <state relative-caret-position="567">
+          <caret line="137" column="0" lean-forward="true" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
