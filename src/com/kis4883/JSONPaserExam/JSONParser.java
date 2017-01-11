@@ -1,4 +1,4 @@
-package com.kis4883;
+package com.kis4883.JSONPaserExam;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -10,20 +10,20 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
+ * JSONParser Class : .json 파일을 읽어 String으로 변환 후, 필요한 token을 분리하여
+ *                     LinkedHashMap 자료구조를 이용하여 Name-Value 형태로 저장 및 출력하는 클래스
  * Created by kis4883 on 2017-01-09.
  */
 public class JSONParser {
 
-    private int curPos;
-    private FileReader in;
-    private String strContextFile;
-    private Matcher m;
-    private int tokenCount;
-    private String[] allToken;
-    private LinkedHashMap<String, JSONValue> objectValue;
+    private FileReader  in;                                     // 파일을 읽는 FileReader 변수
+    private String      strContextFile;                         // 읽은 .json 파일을 String으로 변환한 값을 저장하는 String 변수
+    private Matcher     m;                                      // 정규식에 맞게 추출된 값(token)을 저장하는 변수
+    private int         tokenCount;                             // 정규식에 맞게 추출된 token의 총 갯수를 저장하는 변수
+    private String[]    allToken;                               // 정규식에 맞게 추출된 token을 String 형태로 저장하는 배열
+    private LinkedHashMap<String, JSONValue> objectValue;       // Name과 Value를 한쌍으로 저장하는 자료구조
 
     JSONParser(String fileName) {
-        curPos = 0;
         objectValue = new LinkedHashMap<String, JSONValue>();
         fileReader(fileName);
     }
@@ -119,8 +119,8 @@ public class JSONParser {
     }
 
     private void seperateToken() {
-        String pattern = "\"[^\"]*\"|\\d";
-        Pattern p = Pattern.compile(pattern);
+        String strPattern = "\"[^\"]*\"|\\d";          // "Content"인 String과 Integer만 추출하게 하는 정규식
+        Pattern p = Pattern.compile(strPattern);
         m = p.matcher(strContextFile);
 
         allToken = new String[100];
@@ -129,8 +129,8 @@ public class JSONParser {
         while(m.find()) {
             String stringTemp = (String)m.group();
 
-            if(isStringInteger(stringTemp) == false) {
-                allToken[tokenCount] = removeDoubleQuotes(stringTemp);
+            if(isStringInteger(stringTemp) == false) {                      // 정규식으로 추출할 때 doubleQuotation도 같이 추출
+                allToken[tokenCount] = removeDoubleQuotes(stringTemp);      // 그러므로 이를 제거해서 token[] 형태로 저장
             }
             else {
                 allToken[tokenCount] = stringTemp;
@@ -149,13 +149,5 @@ public class JSONParser {
             }
         }
         return strRet;
-    }
-
-    private String getNextToken() {
-        String res = null;
-        res = allToken[curPos];
-        curPos += 1;
-
-        return res;
     }
 }
