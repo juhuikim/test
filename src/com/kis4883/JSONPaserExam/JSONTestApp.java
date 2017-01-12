@@ -7,12 +7,7 @@ package com.kis4883.JSONPaserExam;
 public class JSONTestApp {
 
     public static void main(String[] args) {
-        JSONParser parser = new JSONParser("C:\\Users\\kis4883\\IdeaProjects\\JSONTEST\\src\\com\\kis4883\\JSONPaserExam\\sample.json");
+        JsonParser parser = new JsonParser("sample.json");
         parser.parse();
-        parser.printAll();
-        parser.get("a");
-        parser.get("b");
-        parser.get("c");
-        parser.get("d");
     }
 }
